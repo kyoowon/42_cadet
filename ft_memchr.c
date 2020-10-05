@@ -6,19 +6,24 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:00:37 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 15:52:34 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/05 22:19:00 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *str, int vlaue, size_t num)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	while (num--)
+	size_t	i;
+
+	if (!s)
+		return (NULL);
+	i = 0;
+	while (i < n)
 	{
-		if (*(unsigned char *)str == (unsigned char)vlaue)
-			return ((void *)str);
-		str--;
+		if (*(unsigned char*)(s + i) == (unsigned char)c)
+			return ((void*)(s + i));
+		i++;
 	}
 	return (NULL);
 }

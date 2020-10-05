@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:22:23 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 15:29:09 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/05 22:00:02 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,14 @@
 
 int	ft_memcmp(const void *str1, const void *str2, size_t num)
 {
-	while (num-- && *(unsigned char *)str1 == *(unsigned char *)str2)
+	size_t i;
+	
+	i = 0;
+	while (i < num)
 	{
-		str1++;
-		str2++;
+		if (*(unsigned char *)(str1 + i) != *(unsigned char *)(str2 + i))
+			return (*(unsigned char *)(str1 + i) - *(unsigned char *)(str2 + i));
+		i++;
 	}
-	return (*(unsigned char *)str1 - *(unsigned char *)str2);
+	return (0);
 }
