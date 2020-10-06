@@ -6,7 +6,7 @@
 #    By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/04 19:46:11 by kyulee            #+#    #+#              #
-#    Updated: 2020/10/06 15:25:15 by kyulee           ###   ########.fr        #
+#    Updated: 2020/10/06 21:34:10 by kyulee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,11 +38,18 @@ SRC =	ft_atoi.c\
 		ft_strrchr.c\
 		ft_tolower.c\
 		ft_toupper.c
-		
+
 SRC2=	ft_substr.c\
 		ft_strjoin.c\
-		ft_strtrim.c
-	
+		ft_strtrim.c\
+		ft_split.c\
+		ft_itoa.c\
+		ft_strmapi.c\
+		ft_putchar_fd.c\
+		ft_putstr_fd.c\
+		ft_putendl_fd.c\
+		ft_putnbr_fd.c
+
 OBJ = $(SRC:.c=.o) $(SRC2:.c=.o)
 
 all : $(NAME)
