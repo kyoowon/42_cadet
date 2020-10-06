@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/05 21:45:24 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 13:55:09 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int		ft_atoi(const char *nptr)
 {
 	int i;
 	int sign;
@@ -20,15 +20,15 @@ int		ft_atoi(const char *str)
 
 	i = 0;
 	sign = 1;
-	if (!str)
+	if (!nptr)
 		return (0);
-	while (str[i] && (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)))
+	while (nptr[i] && (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13)))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
-		if (str[i++] == '-')
+	if (nptr[i] == '-' || nptr[i] == '+')
+		if (nptr[i++] == '-')
 			sign *= -1;
 	nbr = 0;
-	while (str[i] && str[i] >= '0' && str[i] <= '9')
-		nbr = (nbr * 10) + str[i++] - '0';
+	while (nptr[i] && nptr[i] >= '0' && nptr[i] <= '9')
+		nbr = (nbr * 10) + nptr[i++] - '0';
 	return (nbr * sign);
 }

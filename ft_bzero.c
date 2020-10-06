@@ -6,20 +6,20 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 09:48:14 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/05 13:46:28 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 13:54:20 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t num)
+void	ft_bzero(void *str, size_t num)
 {
 	size_t i;
 
 	i = 0;
 	while (i < num)
 	{
-		*((unsigned char *)ptr + i) = 0;
+		*((unsigned char *)str + i) = 0;
 		i++;
 	}
 }

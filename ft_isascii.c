@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:30:10 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 18:35:45 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 14:08:05 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int		ft_isascii(int c)
 {
-	return (c >= 0 && c < 128);
+	return (c >= 0 && c <= 127);
 }

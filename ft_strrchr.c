@@ -6,22 +6,22 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 09:20:16 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 15:55:05 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 14:05:07 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int value)
+char	*ft_strrchr(const char *str, int c)
 {
 	char	*start;
 
 	start = (char *)str;
 	while (*str++)
 		;
-	while (--str != start && *str != (char)value)
+	while (--str != start && *str != (char)c)
 		;
-	if (*str == (char)value)
+	if (*str == (char)c)
 		return ((char *)str);
 	return (NULL);
 }

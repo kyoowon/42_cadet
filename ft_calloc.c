@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:41:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 19:04:15 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 13:56:01 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_calloc(size_t nmenb, size_t size)
 {
-	void *ptr;
+	void *ret;
 
-	ptr = (void*)malloc(nmenb * size);
-	if (!ptr)
+	ret = (void*)malloc(nmenb * size);
+	if (!ret)
 		return (NULL);
-	ft_bzero(ptr, nmenb);
-	return (ptr);
+	ft_bzero(ret, nmenb);
+	return (ret);
 }

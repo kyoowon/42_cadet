@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:30:50 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 15:36:14 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 14:03:19 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	const char *eos;
+	const char *sptr;
 
-	eos = str;
-	while (*eos++)
+	sptr = str;
+	while (*sptr++)
 		;
-	return ((int)(eos - str - 1));
+	return ((int)(sptr - str - 1));
 }

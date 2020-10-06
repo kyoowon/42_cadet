@@ -6,7 +6,7 @@
 #    By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/04 19:46:11 by kyulee            #+#    #+#              #
-#    Updated: 2020/10/05 18:04:46 by kyulee           ###   ########.fr        #
+#    Updated: 2020/10/06 14:50:32 by kyulee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,13 +38,16 @@ SRC =	ft_atoi.c\
 		ft_strrchr.c\
 		ft_tolower.c\
 		ft_toupper.c
+		
+SRC2=	ft_substr.c\
+		ft_strjoin.c
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(SRC:.c=.o) $(SRC2:.c=.o)
 
 all : $(NAME)
 
 $(NAME) :		
-	$(CC) $(CFLAGS) -c $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC) $(SRC2)
 	ar rc $(NAME) $(OBJ)
 
 clean :

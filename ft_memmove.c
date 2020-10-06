@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/02 16:57:44 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 14:56:43 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 13:59:42 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,23 @@
 void	*ft_memmove(void *dest, const void *src, size_t num)
 {
 	char		*tmp;
-	const char	*s;
+	const char	*sptr;
 
 	if (dest <= src)
 	{
 		tmp = dest;
-		s = src;
+		sptr = src;
 		while (num--)
-			*tmp++ = *s++;
+			*tmp++ = *sptr++;
 	}
 	else
 	{
 		tmp = dest;
 		tmp += num;
-		s = src;
-		s += num;
+		sptr = src;
+		sptr += num;
 		while (num--)
-			*--tmp = *--s;
+			*--tmp = *--sptr;
 	}
 	return (dest);
 }

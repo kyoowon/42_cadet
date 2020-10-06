@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:31:57 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/04 18:40:05 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/06 14:08:22 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int		ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
