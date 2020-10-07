@@ -6,7 +6,7 @@
 #    By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/04 19:46:11 by kyulee            #+#    #+#              #
-#    Updated: 2020/10/06 21:34:10 by kyulee           ###   ########.fr        #
+#    Updated: 2020/10/07 17:57:18 by kyulee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,19 @@ SRC2=	ft_substr.c\
 		ft_putendl_fd.c\
 		ft_putnbr_fd.c
 
+BSRC=	ft_lstnew.c\
+		ft_lstadd_front.c\
+		ft_lstsize.c\
+		ft_lstlast.c\
+		ft_lstadd_back.c\
+		ft_lstdelone.c\
+		ft_lstclear.c\
+		ft_lstiter.c\
+		ft_lstmap.c
+
 OBJ = $(SRC:.c=.o) $(SRC2:.c=.o)
+
+BOBJ = $(BSRC:.c=.o)
 
 all : $(NAME)
 
@@ -65,3 +77,7 @@ fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
+
+bonus :
+	$(CC) $(CFLAGS) -c $(BSRC)
+	ar rc $(NAME) $(BOBJ)
