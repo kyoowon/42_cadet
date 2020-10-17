@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 13:52:23 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 22:15:33 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 16:31:55 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!(ret = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	size = ft_strlen(s);
-	while (i < len &&  i + start < size)
+	while (i < len && i + start < size)
 	{
 		ret[i] = s[start + i];
 		i++;

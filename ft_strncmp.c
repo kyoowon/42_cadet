@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 17:34:52 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 14:03:52 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 16:50:31 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int			ft_strncmp(const char *s1, const char *s2, size_t num)
 	while (s1[i] && s2[i] && i < num)
 	{
 		if (cmp_char(s1[i], s2[i]))
-			return (s1[i] - s2[i]);
+			return (cmp_char(s1[i], s2[i]));
 		i++;
 	}
 	if (i < num)

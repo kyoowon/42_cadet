@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 19:06:21 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/05 22:06:31 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 16:40:05 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *str)
 	char	*ret;
 
 	i = 0;
-	if (!str)
-		return (NULL);
 	if (!(ret = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1))))
 		return (NULL);
 	while (str[i])

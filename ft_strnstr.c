@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 17:24:02 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 14:04:47 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 16:48:47 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	size_t j;
 
 	i = 0;
-	if (!str)
-		return (NULL);
 	if (!to_find)
 		return ((char *)str);
 	while (i < len && str[i])

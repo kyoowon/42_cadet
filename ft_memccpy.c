@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 19:24:37 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 21:53:17 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 16:52:58 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t num)
 {
 	size_t i;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	i = 0;
 	while (i < num)

@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:00:37 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 21:55:27 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 16:51:12 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ void	*ft_memchr(const void *str, int c, size_t num)
 {
 	size_t	i;
 
-	if (!str)
-		return (NULL);
 	i = 0;
 	while (i < num)
 	{
