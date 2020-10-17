@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 20:20:36 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 20:03:46 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 20:14:53 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,5 @@ void	ft_putchar_fd(char c, int fd)
 {
 	if (fd < 0)
 		return ;
-	if (0 < c < 255)
-		write(fd, &c, 1);
+	write(fd, &c, 1);
 }
