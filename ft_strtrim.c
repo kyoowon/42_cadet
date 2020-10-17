@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 14:58:10 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 15:29:12 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 20:12:29 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char			*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	len = 0;
 	i = 0;
+	if (!s1 || !set)
+		return (NULL);
 	while (s1[start] && is_set(s1[start], set))
 		start++;
 	len = ft_strlen(s1);
