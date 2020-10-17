@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 19:50:53 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 21:28:16 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,25 @@
 */
 
 #include "libft.h"
+#include "limits.h"
+
+static int	check_over_range(unsigned long long sum, int sign)
+{
+	if (sum > LLONG_MAX - 1 && sign == -1)
+		return (0);
+	if (sum > LLONG_MAX && sign == 1)
+		return (-1);
+	return (sum * sign);
+}
 
 int		ft_atoi(const char *nptr)
 {
 	int i;
 	int sign;
-	int nbr;
-	int nbr_size;
+	unsigned long long nbr;
 
 	i = 0;
 	sign = 1;
-	nbr_size = 0;
 	if (*nptr == 0)
 		return (0);
 	while (nptr[i] && (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13)))
@@ -35,10 +43,7 @@ int		ft_atoi(const char *nptr)
 		if (nptr[i++] == '-')
 			sign = -1;
 	nbr = 0;
-	nbr_size = i;
 	while (nptr[i] && nptr[i] >= '0' && nptr[i] <= '9')
 		nbr = (nbr * 10) + nptr[i++] - '0';
-	if (i - nbr_size >= 20)
-		return (sign > 0 ? -1 : 0);
-	return (nbr * sign);
+	return (check_over_range(nbr, sign));
 }
