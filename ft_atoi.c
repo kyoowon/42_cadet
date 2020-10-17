@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 19:39:07 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 19:50:53 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		ft_atoi(const char *nptr)
 	i = 0;
 	sign = 1;
 	nbr_size = 0;
-	if (nptr == '0')
+	if (*nptr == 0)
 		return (0);
 	while (nptr[i] && (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13)))
 		i++;
