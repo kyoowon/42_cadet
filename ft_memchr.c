@@ -6,14 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:00:37 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 21:10:10 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 21:30:44 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - str : string c :char num : size
 ** return - if find char(C) then Return the current(dest) to the next location
-** function - 
 */
 
 #include "libft.h"
