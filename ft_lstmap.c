@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:52:42 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 21:19:45 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 17:12:24 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*first;
 	t_list	*new;
 
-	if (!lst || !f || !del)
+	if (!lst || !f)
 		return (NULL);
 	first = NULL;
 	while (lst)
