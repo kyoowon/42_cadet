@@ -6,9 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 13:55:09 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 21:06:29 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - nptr : String to replace with number  / return - int type nub
+** function - Replace a numeric string with a number
+*/
 
 #include "libft.h"
 

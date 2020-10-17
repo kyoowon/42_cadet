@@ -6,7 +6,7 @@
 #    By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/04 19:46:11 by kyulee            #+#    #+#              #
-#    Updated: 2020/10/07 17:57:18 by kyulee           ###   ########.fr        #
+#    Updated: 2020/10/16 22:06:48 by kyulee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,7 @@ BOBJ = $(BSRC:.c=.o)
 
 all : $(NAME)
 
-$(NAME) :		
+$(NAME) :
 	$(CC) $(CFLAGS) -c $(SRC) $(SRC2)
 	ar rc $(NAME) $(OBJ)
 

@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 14:37:08 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/07 16:17:10 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 21:26:54 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - content : string element
+** return - pointing last list
+** function - Create a new list by inserting a string element
+*/
 
 #include "libft.h"
 

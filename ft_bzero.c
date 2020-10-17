@@ -6,9 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 09:48:14 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 13:54:20 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/14 16:29:07 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - str : Sting, num : len-size  / return - NULL
+** function - Set a value of zero to a string
+*/
 
 #include "libft.h"
 

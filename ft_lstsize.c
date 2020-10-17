@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 16:41:18 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/07 18:01:30 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 21:24:59 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - lst : Pointing list
+** return - int (list_size)
+** function - Measure the length of the list
+*/
 
 #include "libft.h"
 
@@ -17,6 +23,8 @@ int	ft_lstsize(t_list *lst)
 	int i;
 
 	i = 0;
+	if (!lst)
+		return (0);
 	while (lst)
 	{
 		lst = lst->next;

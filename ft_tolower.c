@@ -6,9 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:38:04 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 14:10:47 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 20:45:29 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - c : char  / return - int
+** function - Replace uppercase letters with lowercase letters
+*/
 
 #include "libft.h"
 

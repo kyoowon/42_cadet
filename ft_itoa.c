@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 19:23:01 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 20:01:16 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 22:22:26 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - nbr : int  / return - string.(When int_MAX, return to INT_MAX)
+** function - Change the number to a string.
+** exception - Memory allocation failure, INT_MIN
+*/
 
 #include "libft.h"
 
@@ -20,7 +26,7 @@ static size_t	ft_nbr_len(int nbr)
 	if (nbr == 0)
 		return (1);
 	if (nbr < 0)
-		len++;
+		len = 1;
 	while (nbr)
 	{
 		nbr = nbr / 10;

@@ -6,9 +6,17 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 19:24:37 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/05 21:50:25 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 21:53:17 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - dest : String to save src : String to copy
+** c : Stop and return when char(c) is found num : copy size
+** return - if find char(C) then Return the current(dest) to the next location
+** else return NULL
+** function - Copy from src to dest by size (Return : if c is found)
+*/
 
 #include "libft.h"
 

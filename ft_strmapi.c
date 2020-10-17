@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 20:03:14 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 20:19:36 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/14 17:29:55 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strmapi(char const *str, char (*f)(unsigned int, char))
 	unsigned int	i;
 
 	i = 0;
-	if (!(ret = (char *)malloc(sizeof(char) * ft_strlen(str))))
+	if (!str || !f)
+		return (NULL);
+	if (!(ret = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1))))
 		return (NULL);
 	while (str[i])
 	{

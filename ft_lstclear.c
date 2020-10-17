@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:30:24 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/07 18:00:00 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 21:02:07 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - lst : Pointing to starting position of lists, del fuction pointer
+** return - NULL
+** function - list clear
+*/
 
 #include "libft.h"
 
@@ -16,14 +22,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list *tmp;
 
-	if (lst && del)
+	if (!lst || !del)
+		return ;
+	while (*lst && lst)
 	{
-		while (*lst && lst)
-		{
-			tmp = *lst;
-			*lst = (*lst)->next;
-			(*del)(tmp->content);
-			free(tmp);
-		}
+		tmp = *lst;
+		*lst = (*lst)->next;
+		(*del)(tmp->content);
+		free(tmp);
 	}
 }

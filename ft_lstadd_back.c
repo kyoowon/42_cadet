@@ -6,9 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 16:51:11 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/07 17:16:23 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 20:59:30 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - lst : Pointing to the starting position of the lists / return - NULL
+** function - Insert a list at the end of the link list.
+*/
 
 #include "libft.h"
 
@@ -16,14 +21,14 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (lst)
+	if (!lst || !new)
+		return ;
+	if (!*lst)
 	{
-		if (*lst)
-		{
-			last = ft_lstlast(*lst);
-			last->next = new;
-		}
-		else
-			*lst = new;
+		*lst = new;
+		return ;
 	}
+	last = ft_lstlast(*lst);
+	last->next = new;
+	new->next = NULL;
 }

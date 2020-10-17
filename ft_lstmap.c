@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:52:42 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/07 18:00:30 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/16 21:19:45 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - lst : Pointing list f : f-pointer, del : delete f-pointer
+** return - pointing list
+** function - Map through f function, del in case of failure
+*/
 
 #include "libft.h"
 
@@ -17,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*first;
 	t_list	*new;
 
-	if (!f || !del)
+	if (!lst || !f || !del)
 		return (NULL);
 	first = NULL;
 	while (lst)
