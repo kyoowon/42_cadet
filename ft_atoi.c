@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 21:30:21 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 21:36:58 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	check_over_range(unsigned long long sum, int sign)
 	return (sum * sign);
 }
 
-int		ft_atoi(const char *nptr)
+int			ft_atoi(const char *nptr)
 {
 	int					i;
 	int					sign;

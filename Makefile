@@ -6,7 +6,7 @@
 #    By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/04 19:46:11 by kyulee            #+#    #+#              #
-#    Updated: 2020/10/16 22:06:48 by kyulee           ###   ########.fr        #
+#    Updated: 2020/10/17 21:37:25 by kyulee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,7 @@ $(NAME) :
 	ar rc $(NAME) $(OBJ)
 
 clean :
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BOBJ)
 
 fclean : clean
 	rm -f $(NAME)
