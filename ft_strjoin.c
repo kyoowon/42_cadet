@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 14:40:41 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 20:11:25 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/10/17 20:18:02 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	if (s1 || s2)
+	if (!s1 || !s2)
 		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	if (!(ret = (char *)malloc(sizeof(char) * len)))
