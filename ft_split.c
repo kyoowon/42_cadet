@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 15:43:00 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 21:33:35 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 16:06:33 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char			**ft_malloc_error(char **tab)
+static char			**ft_memory_free(char **tab)
 {
 	unsigned int	i;
 
@@ -31,24 +31,24 @@ static unsigned int	ft_get_nb_strs(char const *s, char c)
 	unsigned int	i;
 	unsigned int	nb_strs;
 
-	if (!s[0])
+	if (!*s)
 		return (0);
 	i = 0;
 	nb_strs = 0;
-	while (s[i] && s[i] == c)
+	while (*(s + i) && *(s + i) == c)
 		i++;
-	while (s[i])
+	while (*(s + i))
 	{
-		if (s[i] == c)
+		if (*(s + i) == c)
 		{
 			nb_strs++;
-			while (s[i] && s[i] == c)
+			while (*(s + i) && *(s + i) == c)
 				i++;
 			continue ;
 		}
 		i++;
 	}
-	if (s[i - 1] != c)
+	if (*(s + i - 1) != c)
 		nb_strs++;
 	return (nb_strs);
 }
@@ -91,7 +91,7 @@ char				**ft_split(char const *s, char c)
 	{
 		ft_get_next(&next_str, &next_str_len, c);
 		if (!(tab[i] = (char *)malloc(sizeof(char) * (next_str_len + 1))))
-			return (ft_malloc_error(tab));
+			return (ft_memory_free(tab));
 		ft_strlcpy(tab[i], next_str, next_str_len + 1);
 		i++;
 	}

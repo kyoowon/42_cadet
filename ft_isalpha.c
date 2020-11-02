@@ -6,12 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:21:40 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/14 16:33:23 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:42:38 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - c : char  / return - 0 or 1
+** factor - c : char
+** return - 0 or 1
 ** function - it is Checking an alphabet.
 */
 

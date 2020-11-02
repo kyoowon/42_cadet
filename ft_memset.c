@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 18:23:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:39:11 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:41:36 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - str: string, value : value, num : size
-** return - string pointer
-** function - Set a value of zero to a string
+** return - Start position of string
+** function - Set a value to a string
 */
 
 #include "libft.h"

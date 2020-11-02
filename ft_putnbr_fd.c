@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 20:51:22 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 16:31:42 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:58:09 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - s: int (number), fd: file deciptor
+** return - void
+** function - write a string of numbers to the file deciptor
+*/
 
 #include "libft.h"
 

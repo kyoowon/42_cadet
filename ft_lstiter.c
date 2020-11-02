@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:48:02 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 21:04:28 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:46:29 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - lst : Pointing list, f : fuction pointer
-** return - NULL
+** return - void
 ** function - Enter a value through f (function)
 */
 

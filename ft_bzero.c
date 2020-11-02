@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 09:48:14 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:38:36 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:45:49 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - str : Sting, num : len-size
-** return - NULL
+** return - void
 ** function - Set a value of zero to a string
 */
 

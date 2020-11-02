@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 20:48:18 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/06 20:56:24 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:56:46 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - s: string, fd: file deciptor
+** return - void
+** function - write string and '\n' to the file deciptor
+*/
 
 #include "libft.h"
 

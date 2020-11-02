@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:18:02 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 21:04:43 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:46:24 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - lst : Pointing list, del fuction pointer
-** return - NULL
+** return - void
 ** function - one list is deleted
 */
 
