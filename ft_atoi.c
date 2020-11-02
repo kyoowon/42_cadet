@@ -6,12 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 21:36:58 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:38:26 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - nptr : String to replace with number  / return - int type nub
+** factor - nptr : String to replace with number
+** return - int type nub
 ** function - Replace a numeric string with a number
 */
 

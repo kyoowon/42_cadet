@@ -6,12 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:41:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 16:41:33 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:38:45 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - nmenb : bit sizes of type, size : len  / return - string
+** factor - nmenb : bit sizes of type, size : len
+** return - string
 ** function - Set a value of zero to a string
 */
 
