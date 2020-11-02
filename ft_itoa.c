@@ -6,15 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 19:23:01 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:43:09 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:01:42 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - nbr : int
-** return - string.(When int_MAX, return to INT_MAX)
+** factor - nbr : int.
+** return - string.(When int_MAX, return to INT_MAX).
 ** function - Change the number to a string.
-** exception - Memory allocation failure, INT_MIN
+** exception - Memory allocation failure, INT_MIN.
 */
 
 #include "libft.h"

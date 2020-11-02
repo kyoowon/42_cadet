@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:48:02 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:46:29 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:02:01 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - lst : Pointing list, f : fuction pointer
-** return - void
-** function - Enter a value through f (function)
+** factor - lst : Pointing list, f : fuction pointer.
+** return - void.
+** function - Enter a value through f (function).
 */
 
 #include "libft.h"

@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:52:42 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 17:12:24 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:02:13 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - lst : Pointing list f : f-pointer, del : delete f-pointer
-** return - pointing list
-** function - Map through f function, del in case of failure
+** factor - lst : Pointing list f : f-pointer, del : delete f-pointer.
+** return - pointing list.
+** function - Map through f function, del in case of failure.
 */
 
 #include "libft.h"

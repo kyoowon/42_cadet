@@ -6,7 +6,7 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 15:43:00 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 16:20:48 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 16:59:24 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static unsigned int	ft_get_strs_nb(char const *s, char c)
 	unsigned int	i;
 	unsigned int	nb_strs;
 
-	if (!s)
+	if (!*s)
 		return (0);
 	i = 0;
 	nb_strs = 0;

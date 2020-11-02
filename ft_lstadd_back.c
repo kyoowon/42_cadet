@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 16:51:11 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:42:14 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:01:45 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - lst : Pointing to the starting position of the lists
-** return - NULL
+** factor - lst : Pointing to the starting position of the lists.
+** return - NULL.
 ** function - Insert a list at the end of the link list.
 */
 

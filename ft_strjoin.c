@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 14:40:41 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 16:23:13 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:03:42 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - str : string, s2 : string
-** return - Start position of result(joined string)
-** function -
+** factor - str : string, s2 : string.
+** return - Start position of result(joined string).
+** function - Combine two strings into one string.
 */
 
 #include "libft.h"

@@ -6,15 +6,9 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:08:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:38:26 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:01:25 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** factor - nptr : String to replace with number
-** return - int type nub
-** function - Replace a numeric string with a number
-*/
 
 #include "libft.h"
 #include "limits.h"
@@ -27,6 +21,12 @@ static int	check_over_range(unsigned long long sum, int sign)
 		return (-1);
 	return (sum * sign);
 }
+
+/*
+** factor - nptr : String to replace with number.
+** return - int type nub.
+** function - Replace a numeric string with a number.
+*/
 
 int			ft_atoi(const char *nptr)
 {

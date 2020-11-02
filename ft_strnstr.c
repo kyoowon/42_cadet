@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 17:24:02 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 19:53:28 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:11:05 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - s1 : String, s2 : String, num : size.
+** return - difference value of ASCII.
+** function - Compare two strings.
+*/
 
 #include "libft.h"
 

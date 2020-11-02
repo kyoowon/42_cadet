@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 16:30:51 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:46:16 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:01:49 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - lst : Pointing to starting position of the lists, new : new list
-** return - viod
+** factor - lst : Pointing to starting position of the lists, new : new list.
+** return - viod.
 ** function - Insert a list at the front of the link list.
 */
 

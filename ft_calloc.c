@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:41:25 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:41:49 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:01:22 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - nmenb : bit sizes of type, size : len
-** return - Start position of string
-** function - Set a value of zero to a string
+** factor - nmenb : bit sizes of type, size : len.
+** return - Start position of string.
+** function - Set a value of zero to a string.
 */
 
 #include "libft.h"

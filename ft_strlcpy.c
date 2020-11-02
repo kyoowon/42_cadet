@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:37:03 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 19:43:42 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:03:31 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - dest : String to save, src : String to copy, size : size.
+** return - copied size.
+** function - Copy size from src to dest by size.
+*/
 
 #include "libft.h"
 

@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 14:37:08 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 20:27:08 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:02:24 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - content : string element
-** return - pointing last list
-** function - Create a new list by inserting a string element
+** factor - content : string element.
+** return - pointing last list.
+** function - Create a new list by inserting a string element.
 */
 
 #include "libft.h"

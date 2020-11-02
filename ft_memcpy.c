@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/02 16:19:41 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:32:28 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:02:49 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - dest : String to save, src : String to copy, num : size
-** return - Start position of dest
-** function - Copy size from src to dest by size
+** factor - dest : String to save, src : String to copy, num : size.
+** return - Start position of dest.
+** function - Copy size from src to dest by size.
 */
 
 #include "libft.h"
