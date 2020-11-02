@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/10/04 19:46:11 by kyulee            #+#    #+#              #
-#    Updated: 2020/10/17 21:37:25 by kyulee           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I .
@@ -60,14 +48,16 @@ BSRC=	ft_lstnew.c\
 		ft_lstiter.c\
 		ft_lstmap.c
 
+.c.o : 
+	$(CC) $(CFLAGS) -c $< -o $@
+
 OBJ = $(SRC:.c=.o) $(SRC2:.c=.o)
 
 BOBJ = $(BSRC:.c=.o)
 
 all : $(NAME)
 
-$(NAME) :
-	$(CC) $(CFLAGS) -c $(SRC) $(SRC2)
+$(NAME) : $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
 clean :
@@ -78,6 +68,7 @@ fclean : clean
 
 re : fclean all
 
-bonus :
-	$(CC) $(CFLAGS) -c $(BSRC)
+bonus : $(BOBJ)
 	ar rc $(NAME) $(BOBJ)
+
+.PHONY: all clean fclean re bonus

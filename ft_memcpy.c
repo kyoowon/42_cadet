@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/02 16:19:41 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/07 16:09:54 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 15:14:07 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - dest: , src: , num : size
+** return - Start position of dest
+** function - Copy size from src to dest by size
+*/
 
 #include "libft.h"
 
