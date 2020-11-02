@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 20:03:14 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 17:04:47 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:29:06 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - str : String, (*f) : function pointer(factor unsigned int, char).
-** return - string size.
-** function - size to string.
+** return -
+** function -
 */
 
 #include "libft.h"

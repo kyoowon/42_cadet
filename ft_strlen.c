@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 15:30:50 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 17:01:09 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:28:31 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - str : String.
-** return - string size.
-** function - size to string.
+** return - size of string.
+** function - Measure the length of a string.
 */
 
 #include "libft.h"

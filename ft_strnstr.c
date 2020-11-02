@@ -6,14 +6,14 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/01 17:24:02 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 17:11:05 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:14:48 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - s1 : String, s2 : String, num : size.
-** return - difference value of ASCII.
-** function - Compare two strings.
+** factor - str : String, to_find : Search String, len : size.
+** return - Locations Found Pointer.
+** function - Returns the location of a string when it is found.
 */
 
 #include "libft.h"

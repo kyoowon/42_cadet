@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 17:30:24 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 17:01:53 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:27:09 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** factor - lst : Pointing to starting position of lists, del fuction pointer.
-** return - viod.
+** return - void.
 ** function - list clear.
 */
 

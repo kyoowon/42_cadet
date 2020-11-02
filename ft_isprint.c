@@ -6,13 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:31:57 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 15:43:00 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 17:26:57 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - c : char
-** return - 0 or 1
+** factor - c : char.
+** return - 0 or 1.
 ** function - it is Checking a printable.
 */
 
