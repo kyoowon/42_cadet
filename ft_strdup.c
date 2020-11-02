@@ -6,9 +6,15 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 19:06:21 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/17 16:40:05 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 16:22:50 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** factor - str : String to copy
+** return - Start position of result
+** function - Allocate memory space and copy value
+*/
 
 #include "libft.h"
 

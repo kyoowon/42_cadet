@@ -6,12 +6,13 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 18:34:31 by kyulee            #+#    #+#             */
-/*   Updated: 2020/10/16 20:45:34 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 16:16:26 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** factor - c : char  / return - int
+** factor - c : char
+** return - int
 ** function - Replace lowercase letters with upper case letters
 */
 

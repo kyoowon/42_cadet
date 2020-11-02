@@ -6,49 +6,35 @@
 /*   By: kyulee <kyulee@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/06 15:43:00 by kyulee            #+#    #+#             */
-/*   Updated: 2020/11/02 16:06:33 by kyulee           ###   ########.fr       */
+/*   Updated: 2020/11/02 16:20:48 by kyulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char			**ft_memory_free(char **tab)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (tab[i])
-	{
-		free(tab[i]);
-		i++;
-	}
-	free(tab);
-	return (NULL);
-}
-
-static unsigned int	ft_get_nb_strs(char const *s, char c)
+static unsigned int	ft_get_strs_nb(char const *s, char c)
 {
 	unsigned int	i;
 	unsigned int	nb_strs;
 
-	if (!*s)
+	if (!s)
 		return (0);
 	i = 0;
 	nb_strs = 0;
-	while (*(s + i) && *(s + i) == c)
+	while (s[i] && s[i] == c)
 		i++;
-	while (*(s + i))
+	while (s[i])
 	{
-		if (*(s + i) == c)
+		if (s[i] == c)
 		{
 			nb_strs++;
-			while (*(s + i) && *(s + i) == c)
+			while (s[i] && s[i] == c)
 				i++;
 			continue ;
 		}
 		i++;
 	}
-	if (*(s + i - 1) != c)
+	if (s[i - 1] != c)
 		nb_strs++;
 	return (nb_strs);
 }
@@ -71,6 +57,20 @@ static void			ft_get_next(char **next_str, unsigned int *next_len, char c)
 	}
 }
 
+static char			**ft_memory_free(char **tab)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+	return (NULL);
+}
+
 char				**ft_split(char const *s, char c)
 {
 	char			**tab;
@@ -81,7 +81,7 @@ char				**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	nb_strs = ft_get_nb_strs(s, c);
+	nb_strs = ft_get_strs_nb(s, c);
 	if (!(tab = (char **)malloc(sizeof(char *) * (nb_strs + 1))))
 		return (NULL);
 	i = 0;
